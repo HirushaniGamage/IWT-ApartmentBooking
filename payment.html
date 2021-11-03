@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Payment Page</title>
+		<link rel="stylesheet" type="text/css" href="style/payment.css"> 
+		<script src="js/payment.js"></script>
+
+		
+	</head>	
+<style>
+body
+{
+  background-image:url("image/paybg.jfif");
+}
+
+</style>
+	
+	
+	<body>
+	<div id="main">
+			<nav>
+				<img src="image/logo.jpg" width="350" height="170">
+				<ul>
+					<li><a href="Homepage.html">Home</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="Apartment.html">Apartments</a></li>
+					<li><a href="search.html">Search</a></li>
+					<a href="myaccount.html">
+					<button class ="myaccount" type = "button">My Account</button></a>
+					<a href="login.html">
+					<button class ="logout" type = "button"> Log Out</button>
+					</a>
+					
+				</ul>
+			</nav>
+			</div>
+
+<br><br>
+<br>
+<br>
+		<center>
+		<br>
+		<br>
+		<div class="menu">
+			<a class="menu1" href="payment.html"> Credit Card </a>
+			<a class="menu1" href="cashPayment.html"> Cash Payments </a>
+			<a class="menu1" href="Loan.html"> Loan </a>
+		</div>
+		<br>
+		<br>
+		</center>
+	<br>	
+	<center>	
+	<div class="form">
+ <form action="payment.php" target="_self" method="POST" onsubmit="sendMessage()" 
+  
+  <table>
+
+<label ><b> Select Payment Method</b></label></br>
+<br>
+<br>
+    <input type="radio"	id="pay" name="pay"	checked><img src="Image/visa.png" alt="Z Studio" class="logo" width="80px" height="80px">
+    <input type="radio"	id="pay" name="pay"	checked><img src="Image/Mastercard.png" alt="Z Studio" class="logo" width="80px" height="80px">
+	<input type="radio"	id="pay" name="pay"	checked><img src="Image/americanexpress.png" alt="Z Studio" class="logo" width="80px" height="80px">
+	<input type="radio"	id="pay" name="pay"	checked><img src="Image/Discover.jfif" alt="Z Studio" class="logo" width="80px" height="80px">
+<table>
+<tr>
+ <tr><td>
+ <label ><b>First name</b></label></br></td>
+ <td>
+ <input class="txtbox" type="text" id="fname" name="fname" rows="3" cols="3" style="width:400px;" placeholder="Enter your first name" required></td>
+ <br><br>
+ <tr><td>
+ <label ><b>Last name</b></label></br></td>
+ <td>
+ <input class="txtbox" type="text" id="lname" name="lname" rows="3" cols="3" style="width:400px;" placeholder="Enter your last name" required></td>
+ <br><br>
+ 
+ <tr><td>
+ <label ><b>Credit card Number</b></label></br></td>
+ <td>
+ <input class="txtbox" type="text" id="cnum" name="cnum" rows="3" cols="3" style="width:400px;" placeholder="Enter your credit card number" required></td>
+ <br><br>
+ <tr>
+	<td>
+	<label><b>Card holder name</b></label></td>
+	<td>
+	<input type="text" id="chn" name="chn" style="width:400px;"><br><br>
+	</td></tr>
+ 
+ <tr><td>
+	</tr><tr>
+	<td>
+	<label><b>Card Expiry</b></label></td>
+	<td>
+	<input type="tel" id="cexpiry" name="cexpiry" style="width:400px;"  placeholder=".. / .." ><br><br>
+	</td>
+	</tr><tr>
+	<td>
+	<label><b>Card CVC</b> </label></td>
+	<td>
+	<input type="tel" id="cc-cvc" name="cc-cvc" style="width:400px;"  placeholder="...." ><br><br>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<label><b>Amount Paying</b> </label></td>
+	<td>
+	<input type="text" id="amount" name="amount" style="width:400px;"  placeholder="............" ><br><br>
+	</td>
+	</tr>
+	<tr><td>
+ <label ><b>Email address to receive invoice</b></label></br></td>
+ <td>
+ <input class="txtbox" type="email" id="email" name="emailAdd" style="width:300px;" pattern="[a-zA-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="Enter your E-mail Address" required>
+  </td>
+  <br><br>
+	<br><br>
+		 </table>	   
+			<br>						   
+									   
+		Confirm details
+	<input type="checkbox" id="confirm"  name="confirm"  onclick="confirmbutton()" ><br><br>
+	
+	<input type="submit" id="btn1"  name="btn1" value="Make Payment" ><br><br>
+	
+  
+ <br><br>
+   
+  <hr id ="test"><br>
+	<a href="Update_payment.html"><button   class="prof" type="button" >Edit Payment Details</button></a><br><br>
+  
+  </form>
+
+	
+		<br>
+  </div>
+  
+ </center>
+
+
+
+
+<div class="footer">
+			<div class="inner-footer">
+				<div class="footer-item">
+				<h3>Dazzale Homes</h3>
+				<p>As the No.01 premier licensed online apartment sales system in sri lanka,Dazzale Homes Pvt Ltd. is known for their incomparable professionalism in handling housing and apartment resolutions, fulfilling complete customer satisfaction with a vision, thriving with an unfaltering mission while contributing to sustainability and country's infrastructure.</p>
+				<a href="https://maps.google.lk/">
+				<img src="image/map.jpg" width="250" height="150">
+				</a>
+			</div>
+			<div class="footer-item">
+				<h2>Site Map</h2>
+				<div class="border"></div>
+				<ul>
+					<li><a href="Homepage.html">Home</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="purchaseApart.html">Purchase an apartment</a></li>
+					<li><a href="rentApart.html">Rent an apartment</a></li>
+					<li><a href="register.html">Sign Up</a></li>
+					<li><a href="login.html">Sign In</a></li>
+					<li><a href="add.html">Add and Remove advertisement</a></li>
+					
+				</ul>
+			</div>
+				
+			<div class="footer-item">
+				<h2>Contact Us</h2>
+				<div class="border"></div>
+				<ul>
+					<li><a href="#">Dazzale Homes</a></li>
+					<a href="https://maps.google.lk/">
+					<li><i class="map-marker" aria-hidden="true"></i> No.28/2,Palawatta Road,Stanmore Crecent,Colombo 07,Sri Lanka</li><br>
+					</a>
+					<a href="https://www.sliit.lk">
+					<li><i class="phone" aria-hidden="true"></i> Senkada:(+94-763451877)</li>
+					</a>
+					<a href="https://http://www.sliit.lk">
+					<li><i class="phone" aria-hidden="true"></i> Hotline:(+94-0112888445)</li>
+					</a>
+					<a href="https://www.google.com/gmail">
+					<li><i class="envelope" aria-hidden="true"></i> DazzaleHomes@gmail.com</li>
+					</a>
+				</ul>
+			</div>
+			
+			<br>
+			<br>
+			<br>
+			</div>
+		<center>
+	
+		<h2>Copyright © 2020 Online Apartment Sales system Powered by ABC Technologies ®. All rights reserved.</h2>
+	
+		</center>
+			
+		</div>
+
+		</body>
+</html>
+		

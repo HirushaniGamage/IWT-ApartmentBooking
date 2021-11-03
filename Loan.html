@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Loan</title>
+		<link rel="stylesheet" type="text/css" href="style/Loan.css"> 
+		<script src="js/payment.js"></script>
+
+		
+	</head>	
+<style>
+
+body
+{
+  background-image:url("image/loanbg.jfif");
+}
+
+</style>
+	
+	
+	<body>
+	<div id="main">
+			<nav>
+				<img src="image/logo.jpg" width="250" height="150">
+				<ul>
+						<li><a href="Homepage.html">Home</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="Apartment.html">Apartments</a></li>
+					<li><a href="search.html">Search</a></li>
+					<a href="myaccount.html">
+					<button class ="myaccount" type = "button">My Account</button></a>
+					<a href="login.html">
+					<button class ="logout" type = "button"> Log Out</button>
+					</a>
+				</ul>
+			</nav>
+			</div>
+
+<br><br>
+<br>
+<br>
+
+
+
+         <center>
+            <h1> Loan Application Form </h1><br>
+			
+			<h3>Contact Information </h3>
+	    </center>
+		 <br>
+
+<center>
+<div class="form">
+ <form action="Loan.php"  method="POST" onsubmit="sendMessage()" >
+ <table>
+ 
+ <label ><b>First name</b></label></br>
+ <input class="txtbox" type="text" id="fname" name="fname" style="width:400px;" placeholder="Enter your first name" required>
+ <br><br>
+ 
+ <label ><b>Last name</b></label></br>
+ <input class="txtbox" type="text" id="lname" name="lname" style="width:400px;" placeholder="Enter your last name" required>
+ <br><br> 
+ 
+  <b>Birth Date</b>
+  <br>
+  <input type="date" id="bdate" name="bdate" rows="3" cols="3" style="width:400px;">
+  <br><br>
+  
+  <label ><b>Email </b></label></br>
+ <input class="txtbox" type="email" id="email" name="emailAdd" style="width:300px;" pattern="[a-zA-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" placeholder="myname@example.com" required>
+  <br><br>
+
+
+	<label><b>Mobile Number</b> </label></br>
+	<input type="number" id="mobile" name="mobile" style="width:500px;right-align=200px;" pattern="[0-9]{10}" placeholder="Enter mobile no" required><br><br>
+	
+    <label><b>Address</b></label></br>
+	<input type= "text" id="addr" name="addr"  style="width:500px;left-align=200px;" placeholder="Enter address" ><br><br>
+  
+  
+
+<label ><b>Mariatal Status</b></label></br>
+ <input class="txtbox" type="text" id="mname" name="mname" style="width:400px;" placeholder="Married or Single" required>
+ <br><br> 
+ 
+	
+<label ><b>City</b></label></br>
+ <input class="cty" type="text" id="cty" name="cty"  style="width:400px;" placeholder="Enter your city" required>
+ <br><br> 
+
+<label ><b>State/Province</b></label></br>
+ <input class="txtbox" type="text" id="prvnce" name="prvnce" style="width:400px;" placeholder="Enter your province" required>
+ <br><br> 
+
+<label ><b>Postal/Zip code</b></label></br>
+ <input class="txtbox" type="text" id="code" name="code" style="width:400px;"  required>
+ <br><br> 
+
+
+
+ <label class="container">How long have you lived in your given address? <br><br>
+		<input type="radio" checked="checked" name="radio">0-1 Year <br>
+		<input type="radio" checked="checked" name="radio">1-2 Years <br>
+		<input type="radio" checked="checked" name="radio">3-4 Years <br>
+		<input type="radio" checked="checked" name="radio">5+ Years <br>
+		
+		<span class="checkmark"> </span>
+		</label><br><br>
+
+
+		 <center>
+         <h3>Employment Information </h3>
+	    </center>
+		 <br>			 
+							 
+							 
+			 
+							 
+	<label ><b>Occupation</b></label></br>
+ <input class="txtbox" type="text" id="ocptn" name="ocptn" style="width:400px;"required>
+ <br><br> 							 
+	
+	
+ <label class="container">Years of experience<br><br>
+		 <input class="txtbox" type="text" id="exp" name="exp" style="width:400px;" required>
+ <br><br> 
+		
+		<label ><b>Gross monthly income</b></label></br>
+ <input class="txtbox" type="text" id="incm" name="incm" style="width:400px;" required>
+ <br><br> 
+ 		<label ><b>Apartment Amount</b></label></br>
+ <input class="txtbox" type="text" id="amount" name="amount" style="width:400px;"required>
+ <br><br> 		
+		
+
+		
+		<label ><b>Down Payment Amount</b></label></br>
+ <input class="txtbox" type="text" id="damount" name="damount" style="width:400px;" required>
+ <br><br> 
+ 
+ 		<label ><b>Monthly rent/mortgage</b></label></br>
+ <input class="txtbox" type="text" id="mortgage" name="mortgage" style="width:400px;" placeholder="0 for no rent/mortgage" required>
+ <br><br> 
+ 
+ <label ><b>Comments:</b></label></br>
+ <input class="txtbox" type="text" id="cmnt" name="cmnt" style="width:400px;" required>
+ <br><br> 
+ 
+ <label class="container">I hereby agree that the information given is true,accurate and complete as of the date of this application submission. <br>
+		<input type="checkbox" id="confirm"  name="confirm"  onclick="confirmbutton()" ><br><br>
+	</label>
+	<input type="submit" id="btn1"  name="btn1" value="Send Application Now" ><br><br>
+	
+	</form>
+</center>
+
+
+
+
+
+
+
+<div class="footer">
+			<div class="inner-footer">
+				<div class="footer-item">
+				<h3>Dazzale Homes</h3>
+				<p>As the No.01 premier licensed online apartment sales system in sri lanka,Dazzale Homes Pvt Ltd. is known for their incomparable professionalism in handling housing and apartment resolutions, fulfilling complete customer satisfaction with a vision, thriving with an unfaltering mission while contributing to sustainability and country's infrastructure.</p>
+				<a href="https://maps.google.lk/">
+				<img src="image/map.jpg" width="250" height="150">
+				</a>
+			</div>
+			<div class="footer-item">
+				<h2>Site Map</h2>
+				<div class="border"></div>
+				<ul>
+					<li><a href="Homepage.html">Home</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="purchaseApart.html">Purchase an apartment</a></li>
+					<li><a href="rentApart.html">Rent an apartment</a></li>
+					<li><a href="register.html">Sign Up</a></li>
+					<li><a href="login.html">Sign In</a></li>
+					<li><a href="add.html">Add and Remove advertisement</a></li>
+					
+				</ul>
+			</div>
+				
+			<div class="footer-item">
+				<h2>Contact Us</h2>
+				<div class="border"></div>
+				<ul>
+					<li><a href="#">Dazzale Homes</a></li>
+					<a href="https://maps.google.lk/">
+					<li><i class="map-marker" aria-hidden="true"></i> No.28/2,Palawatta Road,Stanmore Crecent,Colombo 07,Sri Lanka</li><br>
+					</a>
+					<a href="https://www.sliit.lk">
+					<li><i class="phone" aria-hidden="true"></i> Senkada:(+94-763451877)</li>
+					</a>
+					<a href="https://http://www.sliit.lk">
+					<li><i class="phone" aria-hidden="true"></i> Hotline:(+94-0112888445)</li>
+					</a>
+					<a href="https://www.google.com/gmail">
+					<li><i class="envelope" aria-hidden="true"></i> DazzaleHomes@gmail.com</li>
+					</a>
+				</ul>
+			</div>
+			
+			<br>
+			<br>
+			<br>
+			</div>
+		<center>
+	
+		<h2>Copyright © 2020 Online Apartment Sales system Powered by ABC Technologies ®. All rights reserved.</h2>
+	
+		</center>
+			
+		</div>
+
+		</body>
+</html>
+
+
+
+
+
+
+
+
+
+

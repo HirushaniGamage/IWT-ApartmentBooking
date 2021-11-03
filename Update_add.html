@@ -1,0 +1,130 @@
+<!DocType html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Add advertisement</title>
+		<link rel="stylesheet" type="text/css" href="style/add.css"> </link>
+		
+	</head>
+	<style>
+	body{
+	background-image: url("image/back1.jpeg");
+	}
+	</style>
+	<body>
+	<div id="main">
+			<nav>
+				<img src="image/logo.jpg" width="250" height="150">
+				<ul>
+					<li><a href="Homepage.html">Home</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="Apartment.html">Apartments</a></li>
+					<li><a href="search.html">Search</a></li>
+					<a href="myaccount.html">
+					<button class ="myaccount" type = "button">My Account</button></a>
+					<a href="login.html">
+					<button class ="logout" type = "button"> Log Out</button>
+					</a>
+				</ul>
+			</nav>
+<div class="container">
+  <div style="text-align:center">
+    <br><h1><font color=black>Add Advertisement</font></h1>
+  </div>
+  <div class="row">
+    <div class="column">
+	
+      <form action="Update_add.php" method="POST">
+        <label for="fname">Name of the apartment</label>
+        <input type="text" id="iname" name="fname"placeholder="Apartment name.."required>
+		<label for="fname">Name of the owner</label>
+        <label for="lname"></label>
+        <input type="text" id="lname" name="lname" placeholder="Owner name.."required>
+        <label for="country">Address</label>
+		<input type="text" id="aname" name="address" placeholder="Address.."required>
+		<label for="floor">Apartment Type</label>
+		<input type="text" id= "type" name="type" placeholder="rental or purchase"required>
+        <label for="floor">Floors</label>
+		<input type="text" id= "flr" name="floor" placeholder="floor..(1-15)"required>
+		<label for="bedroom">Bedrooms</label>
+		<input type="text" id= "rooms" name="room" placeholder="rooms..(1-5)"required>
+		<label for="washroom">Washrooms</label>
+		<input type="text" id= "wshrm" name="washroom" placeholder="washroom..(1or 2)"required>
+		<label for="subject">Description</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <!--<input type="submit" value="update">-->
+		 <button type="submit" name="Ureg" class="btn1"> Update Advertisement</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+
+<div class="footer">
+			<div class="inner-footer">
+				<div class="footer-item">
+				<h3>Dazzale Homes</h3>
+				<h3></h3>
+				<p>As the No.01 premier licensed online apartment sales system in sri lanka,Dazzale Homes Pvt Ltd. is known for their incomparable professionalism in handling housing and apartment resolutions, fulfilling complete customer satisfaction with a vision, thriving with an unfaltering mission while contributing to sustainability and country's infrastructure.</p>
+				<a href="https://maps.google.lk/">
+				<img src="image/map.jpg" width="250" height="150">
+				</a>
+			</div>
+			<div class="footer-item">
+				<h2>Site Map</h2>
+				<div class="border"></div>
+				<ul>
+					<li><a href="Homepage.html">Home</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="Purchase apartment.html">Purchase an apartment</a></li>
+					<li><a href="Apartment.html">Rent an apartment</a></li>
+					<li><a href="register.html">Sign Up</a></li>
+					<li><a href="login.html">Sign In</a></li>
+					<li><a href="add.html">Add and Remove advertisement</a></li>
+					
+				</ul>
+			</div>
+				
+			<div class="footer-item">
+				<h2>Contact Us</h2>
+				<div class="border"></div>
+				<ul>
+					<li><a href="#">Dazzale Homes</a></li>
+					<a href="https://maps.google.lk/">
+					<li><i class="map-marker" aria-hidden="true"></i> No.28/2,Palawatta Road,Stanmore Crecent,Colombo 07,Sri Lanka</li><br>
+					</a>
+					<a href="https://www.sliit.lk">
+					<li><i class="phone" aria-hidden="true"></i> Senkada:(+94-763451877)</li>
+					</a>
+					<a href="https://http://www.sliit.lk">
+					<li><i class="phone" aria-hidden="true"></i> Hotline:(+94-0112888445)</li>
+					</a>
+					<a href="https://www.google.com/gmail">
+					<li><i class="envelope" aria-hidden="true"></i> DazzaleHomes@gmail.com</li>
+					</a>
+				</ul>
+			</div>
+			
+		</div>
+		<!----------------Nav end------------------------------->		
+		<center>
+	
+		<h3>Copyright © 2020 Online Apartment Sales system Powered by ABC Technologies ®. All rights reserved.<h3>
+		
+		</center>
+
+
+		</body>
+</html>

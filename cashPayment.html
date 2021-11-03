@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Cash Payments</title>
+		<link rel="stylesheet" type="text/css" href="style/cashPayment.css"> 
+		<script src="js/payment.js"></script>
+
+		
+	</head>	
+<style>
+
+body
+{
+  background-image:url("image/cashpic.jfif");
+}
+
+</style>
+	
+	
+	<body>
+	<div id="main">
+			<nav>
+				<img src="image/logo.jpg" width="250" height="150">
+				<ul>
+						<li><a href="Homepage.html">Home</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="Apartment.html">Apartments</a></li>
+					<li><a href="search.html">Search</a></li>
+					<a href="myaccount.html">
+					<button class ="myaccount" type = "button">My Account</button></a>
+					<a href="login.html">
+					<button class ="logout" type = "button"> Log Out</button>
+					</a>
+					
+				</ul>
+			</nav>
+			</div>
+
+<br><br>
+<br>
+<br>
+
+                   <center>
+            <h1> Cash Receipt Payment </h1>
+	    </center>
+		 <br>
+	<br><br>
+
+ <center>
+<div class="form">
+ <form action="cashPayment.php" target="_self" method="POST" onsubmit="sendMessage()" >
+ <table>
+ 
+ <label ><b>Date</b></label></br>
+ <input type="txtbox"  id="date" name="date" style="width:400px;"  required>
+ <br><br>
+ 
+ <label ><b> Customer Name</b></label></br>
+ <input  type="txtbox" id="cname" name="cname" style="width:400px;" placeholder="Enter customer name" required>
+ <br><br> 
+ 
+ <label> <b>Cash / Cheque</b></label></br>
+  <br>
+  <input type="tel" id="cc" name="cc"  style="width:400px;"  placeholder="cash or cheque" required>
+  <br><br>
+ 
+  <label ><b>Amount</b></label></br>
+ <input type="tel"  id="amnt" name="amnt" style="width:400px;"  required>
+ <br><br>
+ 
+ <label ><b> Cheque No</b></label></br>
+ <input class="txtbox" type="tel" id="cno" name="cno" style="width:400px;"  required>
+ <br><br> 
+ 
+ <label> <b>Purpose</b></label></br>
+  <br>
+  <input type="tel" id="purpose" name="purpose"  style="width:400px;"  required>
+  <br><br>
+<input type="submit" id="btn1"  name="btn1" value="Send Cash payment Now" ><br><br>
+
+<div class="footer">
+			<div class="inner-footer">
+				<div class="footer-item">
+				<h3>Dazzale Homes</h3>
+				<p>As the No.01 premier licensed online apartment sales system in sri lanka,Dazzale Homes Pvt Ltd. is known for their incomparable professionalism in handling housing and apartment resolutions, fulfilling complete customer satisfaction with a vision, thriving with an unfaltering mission while contributing to sustainability and country's infrastructure.</p>
+				<a href="https://maps.google.lk/">
+				<img src="image/map.jpg" width="250" height="150">
+				</a>
+			</div>
+			<div class="footer-item">
+				<h2>Site Map</h2>
+				<div class="border"></div>
+				<ul>
+					<li><a href="Homepage.html">Home</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About Us</a></li>
+					<li><a href="purchaseApart.html">Purchase an apartment</a></li>
+					<li><a href="rentApart.html">Rent an apartment</a></li>
+					<li><a href="register.html">Sign Up</a></li>
+					<li><a href="login.html">Sign In</a></li>
+					<li><a href="add.html">Add and Remove advertisement</a></li>
+					
+				</ul>
+			</div>
+				
+			<div class="footer-item">
+				<h2>Contact Us</h2>
+				<div class="border"></div>
+				<ul>
+					<li><a href="#">Dazzale Homes</a></li>
+					<a href="https://maps.google.lk/">
+					<li><i class="map-marker" aria-hidden="true"></i> No.28/2,Palawatta Road,Stanmore Crecent,Colombo 07,Sri Lanka</li><br>
+					</a>
+					<a href="https://www.sliit.lk">
+					<li><i class="phone" aria-hidden="true"></i> Senkada:(+94-763451877)</li>
+					</a>
+					<a href="https://http://www.sliit.lk">
+					<li><i class="phone" aria-hidden="true"></i> Hotline:(+94-0112888445)</li>
+					</a>
+					<a href="https://www.google.com/gmail">
+					<li><i class="envelope" aria-hidden="true"></i> DazzaleHomes@gmail.com</li>
+					</a>
+				</ul>
+			</div>
+			
+			<br>
+			<br>
+			<br>
+			</div>
+		<center>
+	
+		<h2>Copyright © 2020 Online Apartment Sales system Powered by ABC Technologies ®. All rights reserved.</h2>
+	
+		</center>
+			
+		</div>
+
+		</body>
+</html>
